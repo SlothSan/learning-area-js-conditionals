@@ -33,7 +33,12 @@
     let pwdResult;
 
     // Add your code here
-
+     if (machineActive === true) {
+       machineResult = "You can log in.";
+       pwdResult = pwd === 'cheese' ? 'Login Sucessful!' : 'Password Incorrect : Login Failed';
+     } else {
+       machineResult = "Machine needs to be turned on to log-in";
+     }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
