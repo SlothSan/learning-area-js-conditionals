@@ -24,11 +24,17 @@
   
   
   <script>
-    let season = 'summer';
+    let season = '';
     let response;
 
     // Add your code here
-
+    if (season === "summer") {
+      response = "Its the season for sunburn!"
+    } else if (season === "winter") {
+      response = "Its the season for snowball fights!"
+    } else {
+      response = "season is undefined"
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
