@@ -32,6 +32,11 @@
 
     if(machineActive) {
       // Add your code here
+      switch(machineActive) {
+        case (score >= 0 && score < 20):
+          response = "That was a terrible score — total fail!";
+          break;
+      }
     } else {
       response = 'The machine is turned off. Turn it on to process your score.';
     }
