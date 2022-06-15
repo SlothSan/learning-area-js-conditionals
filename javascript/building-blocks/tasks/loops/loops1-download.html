@@ -28,13 +28,20 @@
   <script>
     const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
     const list = document.createElement('ul');
-
-    // Add your code here
-
-    // Don't edit the code below here!
-
     const section = document.querySelector('section');
     section.appendChild(list);
+
+    // Add your code here
+    let marker = document.createElement('li');
+
+    for (let i = 0; i < myArray.length; i++) {
+      marker = document.createElement('li');
+      marker.textContent = myArray[i];
+      list.appendChild(marker);    
+    }
+    // Don't edit the code below here!
+
+
   </script>
 
 </html>
