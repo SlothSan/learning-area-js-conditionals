@@ -29,7 +29,40 @@
     let bandInfo;
 
     // Add your code here
+    let favBand = {
+      name: `The Chemical Brothers`,
+      nationality: `British`,
+      genre: `Big Beats`,
+      members: 2,
+      formed: 1992,
+      split: false,
+      albums: [
+        {
+          name: `Exit Planet Dust`,
+          date: 1995,
+        },
+        {
+          name: `Dig Your Own Hole`,
+          date: 1997,
+        },
+        {
+          name: `Surrender`,
+          date: 1998,
+        },
+        {
+          name: `Come With Us`,
+          date: 2002
+        },
+        {
+          name: `Push the Button`,
+          date: 2005,
+        },
+      ],
 
+    };
+
+    bandInfo = `My favourite band is ${favBand.name}, they formed in ${favBand.formed}. There first album was ${favBand[`albums`][0][`name`]} released in ${favBand[`albums`][0][`date`]}, 
+    there latest album is ${favBand[`albums`][4][`name`]} released in ${favBand[`albums`][4][`date`]}.`
 
     // Don't edit the code below here!
 
